@@ -1,16 +1,16 @@
 ---
 layout: default
-title: "The Rant Archive"
+title: "xyrotype"
 ---
 
-# Recent Dumps
+# My Enlisted Posts
 
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
-      <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.title }}
+      <a href="{{ post.url | relative_url }}" class="post-link-wrapper">
+        <span class="post-title">{{ post.title }}</span>
+        <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
       </a>
     </li>
   {% endfor %}
